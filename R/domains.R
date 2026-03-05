@@ -192,6 +192,8 @@ DomainExtent <- function(geo) {
   list(lonlim = lonlim , latlim = latlim,
        clonlat=clonlat,
        x0=x0, y0=y0, x1=x1, y1=y1, dx=dx, dy=dy, nx=domain$nx, ny=domain$ny,
+       NE=c(border_top$x[domain$nx], border_top$y[domain$nx]),
+       SW=c(border_bottom$x[1], border_bottom$y[1]),
        wrap = wrap)
 }
 
